@@ -24,7 +24,7 @@ filetype plugin indent on    " required
 let &t_Co=256
 syntax enable
 set background=dark
-colorscheme molokai
+colorscheme solarized
 
 "Line Number"
 set number
