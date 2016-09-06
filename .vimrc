@@ -65,5 +65,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-"TODO
-"Add nerd tree toggle
+"NERDtree settings {{{
+"Enable Nerdtree with CTRL + N
+map <C-n> :NERDTreeToggle<CR>
+"}}}
