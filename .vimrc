@@ -13,13 +13,14 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'scrooloose/nerdtree'
-" Plugin 'jelera/vim-javascript-syntax' "
+" Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
@@ -48,21 +49,21 @@ set shiftwidth=4
 "On pressing tab, insert 4 spaces
 set expandtab
 
-"Visual autocomplete for command menu"
+"Visual autocomplete for command menu
 set wildmenu
 
-"HighLight matching {[()]}"
+"HighLight matching {[()]}
 set showmatch
 
-"Set leader"
+"Set leader
 :let mapleader = ","
 
-"Turn off search hightlight"
+"Turn off search hightlight
 nnoremap <leader><space> :nohlsearch<CR>
 
-"Open a NERDTree automatically when vim starts up if no files were specified"
+"Open a NERDTree automatically when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-"TODO"
-"Add nerd tree toggle"
+"TODO
+"Add nerd tree toggle
