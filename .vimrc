@@ -14,14 +14,18 @@ Plugin 'gmarik/Vundle.vim'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'scrooloose/nerdtree'
 " Plugin 'jelera/vim-javascript-syntax'
+" Javascript highlighting
 Plugin 'pangloss/vim-javascript'
+" React highlighting
+Plugin 'mxw/vim-jsx'
+" Syntastic Checking
+Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
