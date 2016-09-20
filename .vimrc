@@ -73,3 +73,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "Enable Nerdtree with CTRL + N
 map <C-n> :NERDTreeToggle<CR>
 "}}}
+
+"Jump to the last position when reopening a file
+if has("autocmd")
+   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
