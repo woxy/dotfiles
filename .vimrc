@@ -16,6 +16,8 @@ Plugin 'scrooloose/nerdtree'
 " Plugin 'jelera/vim-javascript-syntax'
 " Javascript highlighting
 Plugin 'pangloss/vim-javascript'
+" Rust highlighting
+Plugin 'rust-lang/rust.vim'
 " React highlighting
 Plugin 'mxw/vim-jsx'
 " Syntastic Checking
