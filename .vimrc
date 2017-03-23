@@ -64,6 +64,9 @@ set showmatch
 "Set leader
 :let mapleader = ","
 
+"Set to eslint
+let g:syntastic_javascript_checkers = ['eshint']
+
 "Turn off search hightlight
 nnoremap <leader><space> :nohlsearch<CR>
 
